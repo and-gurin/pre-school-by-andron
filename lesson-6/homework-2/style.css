@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Oswald:wght@300;400;500;700&family=PT+Sans:wght@700&family=Roboto+Slab:wght@700&family=Roboto:wght@300;400;700;900&display=swap');
+@import "./print.css" print;
+@import "breackpoint-1200.css" screen and (min-width: 1200px);
+
+.wrapper {
+    max-width: 90vw;
+    position: absolute;
+    margin: 0;
+}
+
+.header {
+    background-color: rgb(52, 66, 30);
+    width: 90vw;
+    
+    height: 100vh;
+    position: relative;
+    
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 20px;
+    left: 100px;
+    position: relative;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 96px;
+    color: white;
+    font-weight: 700;
+    line-height: 106px;
+    width: 200px;
+    position: absolute;
+    left: 150px;
+    top: 100px;
+}
+.main {
+    background: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/73f94dd52f8f56d096912f75/01.jpg);
+    position: absolute;
+    width: 90vw;
+    height: 100vh;
+    background-position: 300px 50px;
+    top: 80px;
+    right: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-left: 0px;
+    filter: drop-shadow(0px 0px 10px rgba(34, 60, 80, 0.2));
+}
+
+.depiction {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+    position: absolute;
+    width: 300px;
+    color: white;
+    bottom: 0px;
+    right: 0px;
+}
+
+.view {
+    width: 50vw;
+    height: 35vh;
+    background-color: rgb(193, 148, 52);
+    position: relative;
+    left: 200px;
+    top: -50px;
+}
+
+.view-pict {
+    top: 50%;
+    margin-top: -80px;
+    position: absolute;
+    left: -100px;
+    
+}
+
+.view-img {
+    margin-right: 10px;
+}
+
+.box {
+    background-color: red;
+    width: 300px;
+    height: 100px;
+    color: white;
+    margin: 50px;
+    font-size: 25px;
+    line-height: 100px;
+    text-align: center;
+}
+
+#magic {
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+}
