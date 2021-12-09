@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 90rem;
+    display: flex;
+    flex-direction: column;
+    border: 7px solid blueviolet;
+}
+
+div {
+    border: 2px solid darkblue;
+    margin: 3rem;
+}
+
+.rect-1 {
+    background-color: dodgerblue;
+}
+
+.rect-2, 
+.rect-5 {
+    width: 10rem;
+    height: 40rem;
+    line-height: 40rem;
+    background-color: moccasin;
+}
+
+.block-top,
+.column-2,
+.column-3,
+.column-4 {
+    display: flex;
+}
+
+.rect-3 {
+    width: 50rem;
+    height: 7rem;
+    background-color: orangered;
+}
+
+.rect-4 {
+    height: 30rem;
+    line-height: 30rem;
+    background-color: palegoldenrod;
+}
+
+.rect-6 {
+    background-color: peru;
+}
+
+.block-top__center, 
+.block-top,
+.column-2,
+.column-3,
+.column-4 {
+    margin: 0;
+    border: none;
+}
+
+.rect-7,
+.rect-8 {
+    width: 40rem;
+    background-color: lightcyan;
+}
+
+.rect-9,
+.rect-10,
+.rect-11,
+.rect-12 {
+    width: 20rem;
+    height: 13rem;
+    line-height: 13rem;
+    background-color: khaki;
+}
+
+.rect-13,
+.rect-14,
+.rect-15 {
+    width: 25rem;
+    height: 13rem;
+    line-height: 13rem;
+    background-color: palegreen;
+}
+
+.rect-16 {
+    background-color: slategray;
+}
