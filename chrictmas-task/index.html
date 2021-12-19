@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Merry Chistmas</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header_wrapper">
+          <div class="header__button">
+            <a href="#">
+                <span class="ico ico_audio"></span>
+            </a>
+            <a href="#">
+                <span class="ico ico_snow"></span>
+            </a>
+            <input type="search" class="search" name="search" id="search" placeholder="Поиск">
+          </div>
+          <h1>Игрушки</h1>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper main_wrapper">
+            <aside class="aside">
+                <form action>
+                    <fieldset>
+                        <label>Сортировать
+                        <select name="sort" id="sort">
+                          <option value="growth">По возрастанию</option>
+                          <option value="decrease">По убыванию</option>
+                        </select>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <div>Категории</div>
+                        <input type="checkbox"   class="custom-checkbox_cat" id="cat" name="cat" value="yes">
+                        <label for="cat"></label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" class="custom-checkbox_bell" id="bell" name="bell" value="yes">
+                        <label for="bell"></label>
+                        <input type="checkbox" class="custom-checkbox_ball" id="ball" name="ball" value="yes">
+                        <label for="ball"></label>
+                        <input type="checkbox" class="custom-checkbox_cone" id="cone" name="cone" value="yes">
+                        <label for="cone"></label>
+                        <input type="checkbox" class="custom-checkbox_star" id="star" name="star" value="yes">
+                        <label for="star"></label>
+                        <input type="checkbox" class="custom-checkbox_snow" id="snow" name="snow" value="yes">
+                        <label for="snow"></label>
+                        <input type="checkbox" class="custom-checkbox_toy" id="toy" name="toy" value="toy">
+                        <label for="toy"></label>
+                    </fieldset>
+                    <fieldset>
+                        <span>Количество экземпляров</span>
+                        <div>
+                            <label for="year">
+                            <input type="range" min="1940" max="2021" step="1" name="year">
+                            </label>
+                            <div class="year_digit">
+                                <div>2</div>
+                                <div>12</div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <span>Год приобретения</span>
+                        <div>
+                            <label for="year">
+                            <input type="range" min="1940" max="2021" step="1" name="year">
+                            </label>
+                            <div class="year_digit">
+                                <div>1940</div>
+                                <div>2021</div>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <div>Цвет</div>
+                        <input type="checkbox" class="custom-checkbox_white" id="white" name="white" value="yes">
+                        <label for="white"></label>
+                        <input type="checkbox" class="custom-checkbox_yellow" id="yellow" name="yellow" value="yes">
+                        <label for="yellow"></label>
+                        <input type="checkbox" class="custom-checkbox_red" id="red" name="red" value="yes">
+                        <label for="red"></label>
+                        <input type="checkbox" class="custom-checkbox_blue" id="blue" name="blue" value="yes">
+                        <label for="blue"></label>
+                        <input type="checkbox" class="custom-checkbox_green" id="green" name="green" value="yes">
+                        <label for="green"></label>
+                    </fieldset>
+                    <fieldset>
+                        <div>Размер</div>
+                        <input type="checkbox" class="custom-checkbox_big" id="big" name="big" value="yes">
+                        <label for="big">Большой</label>
+                        <input type="checkbox" class="custom-checkbox_medium" id="medium" name="medium" value="yes">
+                        <label for="medium">Средний</label>
+                        <input type="checkbox" class="custom-checkbox_small" id="small" name="small" value="yes">
+                        <label for="small">Маленький</label>
+                    </fieldset>
+                    <fieldset>
+                        <input type="checkbox" class="custom-checkbox_love" id="love" name="love" value="yes">
+                        <label for="love">Только любимые</label>
+                    </fieldset>
+                    <fieldset>
+                        <button class="form_button">Сбросить фильтры</button>
+                        <button class="form_button">Сбросить настройки</button>
+                    </fieldset>
+                </form>
+            </aside>
+                
+                <article >
+                    <div class="cards">
+                        <div class="card" data-num="1">
+                            <h3 class="name">Большой шар с рисунком цветок</h3>
+                            <img class="card_img" src="./src/assets/toys/1.png" alt="Большой шар с рисунком цветок">
+                            <p class="count">Количество: <span>2</span></p>
+                            <p class="year">Год покупки: <span>1960</span></p>
+                            <p class="shape">Форма игрушки: <span>Шар</span></p>
+                            <p class="color">Цвет: <span>Желтый</span></p>
+                            <p class="size">Размер: <span>Большой</span></p>
+                            <p class="favorite">Любимая: <span>нет</span></p>
+                        </div>
+                    </div>
+                </article>
+        </div>
+    </main>
+
+    
+    <script></script>
+</body>
+</html>
