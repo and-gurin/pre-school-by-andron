@@ -7,12 +7,24 @@ body {
     background-color: #192F2D;
 }
 
+fieldset {
+  border: none;
+}
+
+p {
+  padding: 0;
+  margin: 1rem;
+}
+
 .wrapper {
     max-width: 172rem;
-    margin: 0 5rem 0 5rem;
+    margin: 0 2rem 0 2rem;
 }
 .aside {
-    width: 45rem;
+    width: 40rem;
+    flex-basis: 40rem;
+    flex-shrink: 0;
+
 }
 
 .header_wrapper {
@@ -300,13 +312,28 @@ input[type=range]::-webkit-slider-thumb {
   background-position: center;
 }
 
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-around;
+}
+
 .card {
     width: 22rem;
     height: 34rem;
-}
+    border: solid 0.2rem #9DF3FF33;
+    border-radius: 1rem;
+    flex-basis: 22rem;
+    margin-bottom: 2rem;
+    background-color: #616e6e;
+  }
 
 .card_img {
     width: 8.4rem;
     height: auto;
-
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
 }

@@ -601,7 +601,6 @@ const cardsData = [
   },
 ];
 
-export default data;
 
 const makeElement = function (tagName, className, classData, text) {
   let element = document.createElement(tagName);
@@ -647,3 +646,5 @@ for (var i = 0; i < cardsData.length; i++) {
   var cardItem = createCard(cardsData[i]);
   cardList.appendChild(cardItem);  
 }
+
+export default data;
