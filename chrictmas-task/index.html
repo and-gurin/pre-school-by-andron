@@ -10,24 +10,21 @@
 <body>
     <header class="header">
         <div class="wrapper header_wrapper">
+            <div class="navigation">
+            <a href="#" class="logo"></a>
+            <a href="#" class="page-toys_switch">Игрушки</a>
+            <a href="#" class="page-tree_switch">Елка</a>
+        </div>
           <div class="header__button">
-            <a href="#">
-                <span class="ico ico_audio"></span>
-            </a>
-            <a href="#">
-                <span class="ico ico_snow"></span>
-            </a>
             <input type="search" class="search" name="search" id="search" placeholder="Поиск">
           </div>
-          <h1>Игрушки</h1>
         </div>
     </header>
-    <main>
-        <div class="wrapper main_wrapper">
+        <div class="wrapper page-toys_wrapper">
             <aside class="aside">
                 <form action>
                     <fieldset>
-                        <label>Сортировать
+                        <label> <span class="category">Сортировать</span> 
                         <select name="sort" id="sort">
                           <option value="growth">По возрастанию</option>
                           <option value="decrease">По убыванию</option>
@@ -35,12 +32,12 @@
                         </label>
                     </fieldset>
                     <fieldset>
-                        <div>Категории</div>
+                        <div class="category">Категории</div>
                         <input type="checkbox"   class="custom-checkbox_cat" id="cat" name="cat" value="yes">
                         <label for="cat"></label>
                     </fieldset>
                     <fieldset>
-                        <input type="checkbox" class="custom-checkbox_bell" id="bell" name="bell" value="yes">
+                        <input type="checkbox" class="custom-checkbox_bell" id="bell" name="bell" value>
                         <label for="bell"></label>
                         <input type="checkbox" class="custom-checkbox_ball" id="ball" name="ball" value="yes">
                         <label for="ball"></label>
@@ -109,7 +106,8 @@
                     </fieldset>
                 </form>
             </aside>
-                <article class="toys">
+            
+            <article class="toys">
                     <div class="cards">
                         <!-- <div class="card" num="1">
                             <h3 class="name">Большой шар с рисунком цветок</h3>
@@ -122,9 +120,56 @@
                             <p class="favorite">Любимая: <span>нет</span></p>
                         </div> -->
                     </div>
-                </article>
+            </article>
         </div>
-    </main>
+        <div class="wrapper page-tree_wrapper">
+                <aside class="left-side">
+                <div class="header__button page-tree_category">
+                <a href="#">
+                <span class="ico ico_audio"></span>
+                </a>
+                 <a href="#">
+                <span class="ico ico_snow"></span>
+                </a>
+                </div>
+                    <div class="category page-tree_category">Выберите елку</div>
+                <div class="tree-change">
+                    <div class="tree-change_select tree_1"></div>
+                    <div class="tree-change_select tree_2"></div>
+                    <div class="tree-change_select tree_3"></div>
+                    <div class="tree-change_select tree_4"></div>
+                </div>
+                <div class="category page-tree_category">Выберите фон</div>
+                <div class="background-change">
+                    <div class="background-change_select background_1"></div>
+                    <div class="background-change_select background_2"></div>
+                    <div class="background-change_select background_3"></div>
+                    <div class="background-change_select background_4"></div>
+                    <div class="background-change_select background_5"></div>
+                    <div class="background-change_select background_6"></div>
+                    <div class="background-change_select background_7"></div>
+                    <div class="background-change_select background_8"></div>
+                </div>
+                <div class="garland-change">
+                    <div class="category page-tree_category">Гирлянда</div>
+                    <div class="page-tree_category">
+                        <input type="checkbox" class="custom-checkbox_garland__1" id="garland_1" name="garland_1" value="yes">
+                        <label for="garland_1"></label>
+                        <input type="checkbox" class="custom-checkbox_garland__2" id="garland_2" name="garland_2" value="yes">
+                        <label for="garland_2"></label>
+                        <input type="checkbox" class="custom-checkbox_garland__3" id="garland_3" name="garland_3" value="yes">
+                        <label for="garland_3"></label>
+                    </div>
+                </div>
+                <div class="page-tree_category">
+                    <button class="form_button">Сбросить фильтры</button>
+                    <button class="form_button">Сбросить настройки</button>
+                </div>
+            </aside>
+            <div class="main-section">
+
+            </div>
+        </div>
     <script></script>
 </body>
 </html>

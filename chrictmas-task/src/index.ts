@@ -1,5 +1,4 @@
 import "../style.css"
-imgUrl: require('./assets/toys/60.png')
 
 const cardsData = [
   {
@@ -654,7 +653,7 @@ const cardsData = [
   {
     num: '60',
     name: 'Фигурка Голубь',
-    imgUrl: require('./assets/toys/59.png'),
+    imgUrl: require('./assets/toys/60.png'),
     count: '12',
     year: '1940',
     shape: 'фигурка',
@@ -673,7 +672,7 @@ const makeElement = function (tagName: string, className: string, text: string =
   return element;
 };
 
-const createCard = function (product: { num: string; name: string; count: string; year: string; shape: string; color: string; size: string; favorite: boolean; imgUrl: string; text: string }) {
+const createCard = function (product: { num: string; name: string; count: string; year: string; shape: string; color: string; size: string; favorite: boolean; imgUrl: string}) {
   let listItem = makeElement('div', 'card');
 
   let num = makeElement('div', 'num');
@@ -684,7 +683,7 @@ const createCard = function (product: { num: string; name: string; count: string
 
   let picture  = makeElement('img', 'card_img') as HTMLImageElement;
   picture.src = product.imgUrl;
-  picture.alt = product.text;
+  picture.alt = product.name;
   listItem.appendChild(picture); 
 
   let count = makeElement('p', 'count', product.count);
@@ -696,7 +695,7 @@ const createCard = function (product: { num: string; name: string; count: string
   listItem.appendChild(year);
 
   let shape = makeElement('p', 'shape', product.shape);
-  shape.textContent = 'Форма игрушки: ' + product.shape;
+  shape.textContent = 'Форма: ' + product.shape;
   listItem.appendChild(shape);
 
   let color = makeElement('p', 'color', product.color);
@@ -710,10 +709,10 @@ const createCard = function (product: { num: string; name: string; count: string
   let favorite = makeElement('p', 'favorite');
   if (product.favorite) {
     favorite.textContent = 'Любимая: да';
-    favorite.classList.add('beloved');
+    /* favorite.classList.add('beloved'); */
   } else {
     favorite.textContent = 'Любимая: нет';
-    favorite.classList.add('unloved');
+    /* favorite.classList.add('unloved'); */
   }
   
   listItem.appendChild(favorite);
@@ -723,8 +722,45 @@ const createCard = function (product: { num: string; name: string; count: string
 
 let cardList = document.querySelector('.cards');
 
-for (var i = 0; i < cardsData.length; i++) {
-  var cardItem = createCard(cardsData[i]);
+if (cardList) {
+for (let i = 0; i < cardsData.length; i++) {
+  let cardItem = createCard(cardsData[i]);
   cardList.appendChild(cardItem);  
 } 
+}
+
+/* let cards = document.querySelectorAll('.card');
+   
+    cards.onclick = function (products) {
+
+      for (let i = 0; i < cards.length; i++) {
+    let card = cards[i];
+    let product = products[i];
+    
+    let favoriteClass = 'beloved';
+    if (!product.favorite) {
+      favoriteClass = 'unloved';
+    }
+    card.classList.add(favoriteClass);
+      }
+    } */
+/* let shapes = document.querySelector('.custom-checkbox_bell');
+let cards = document.querySelectorAll('.card');
+shapes.onchange = function () {
+  for (let item of cards) {
+    if (item.shape !== 'колокольчик') {
+      cards.classList.add('hidden');
+    }
+  }
+}
+ */
+    let pageTree = document.querySelector('.page-tree_wrapper');
+    let pageToysSwitch = document.querySelector('.page-toys_switch') as HTMLImageElement;
+    if (pageToysSwitch) {pageToysSwitch.onclick = function () {
+      pageTree?.classList.add('hidden')
+    }
+  } 
+  
+
+
 
