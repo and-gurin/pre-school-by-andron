@@ -754,12 +754,40 @@ shapes.onchange = function () {
   }
 }
  */
-    let pageTree = document.querySelector('.page-tree_wrapper');
-    let pageToysSwitch = document.querySelector('.page-toys_switch') as HTMLImageElement;
+let pageStart = document.querySelector('.page-start');  
+let pageToys = document.querySelector('.page-toys_wrapper');
+let pageTree = document.querySelector('.page-tree');
+let pageStartSwitch = document.querySelector('.page-start_switch') as HTMLImageElement;    
+let pageToysSwitch = document.querySelector('.page-toys_switch') as HTMLImageElement;
+let pageTreeSwitsh = document.querySelector('.page-tree_switch') as HTMLImageElement;
     if (pageToysSwitch) {pageToysSwitch.onclick = function () {
-      pageTree?.classList.add('hidden')
+      pageTree?.classList.add('hidden');
+      pageStart?.classList.add('hidden');
+      pageToys?.classList.remove('hidden');
     }
   } 
+    if (pageTreeSwitsh) {pageTreeSwitsh.onclick = function () {
+      pageToys?.classList.add('hidden');
+      pageStart?.classList.add('hidden');
+      pageTree?.classList.remove('hidden');
+    }
+  }
+    if (pageStartSwitch) {pageStartSwitch.onclick = function () {
+      pageToys?.classList.add('hidden');
+      pageTree?.classList.add('hidden');
+      pageStart?.classList.remove('hidden');
+    }
+    }
+
+    const cards = document.querySelectorAll('.card') as any;
+    for (let card of cards) {
+      card.onclick = function () {
+        card.classList.toggle('card_favourite');
+      }
+    }
+    
+
+
   
 
 

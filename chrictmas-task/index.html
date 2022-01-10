@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Merry Chistmas</title>
 </head>
 <body>
     <header class="header">
-        <div class="wrapper header_wrapper">
             <div class="navigation">
-            <a href="#" class="logo"></a>
-            <a href="#" class="page-toys_switch">Игрушки</a>
-            <a href="#" class="page-tree_switch">Елка</a>
-        </div>
-          <div class="header__button">
-            <input type="search" class="search" name="search" id="search" placeholder="Поиск">
-          </div>
-        </div>
+                <a href="#" class="logo page-start_switch"></a>
+                <a href="#" class="page-toys_switch header_category">Игрушки</a>
+                <a href="#" class="page-tree_switch header_category">Елка</a>
+            <div class="search">
+                <input type="search" class="search button search_button" name="search" id="search" placeholder="Поиск">
+            </div>
+            </div>
     </header>
-        <div class="wrapper page-toys_wrapper">
+    <div class="page page-start">
+            <div class="ball_1"></div>
+            <div class="page-start_main">
+                <h1>Новогодняя игра "Наряди елку"</h1>
+            </div>
+            <button class="start_button button">Начать игру</button>
+            <div class="ball_2"></div>
+    </div>
+    <div class="wrapper page-toys_wrapper hidden">
             <aside class="aside">
                 <form action>
                     <fieldset>
-                        <label> <span class="category">Сортировать</span> 
+                        <label class="page-toys_category"> <div class="category page-toys_category">Сортировать</div> 
                         <select name="sort" id="sort">
                           <option value="growth">По возрастанию</option>
                           <option value="decrease">По убыванию</option>
@@ -32,7 +37,7 @@
                         </label>
                     </fieldset>
                     <fieldset>
-                        <div class="category">Категории</div>
+                        <div class="category page-toys_category">Категории</div>
                         <input type="checkbox"   class="custom-checkbox_cat" id="cat" name="cat" value="yes">
                         <label for="cat"></label>
                     </fieldset>
@@ -101,8 +106,8 @@
                         <label for="love">Только любимые</label>
                     </fieldset>
                     <fieldset>
-                        <button class="form_button">Сбросить фильтры</button>
-                        <button class="form_button">Сбросить настройки</button>
+                        <button class="form_button button">Сбросить фильтры</button>
+                        <button class="form_button button">Сбросить настройки</button>
                     </fieldset>
                 </form>
             </aside>
@@ -121,10 +126,11 @@
                         </div> -->
                     </div>
             </article>
-        </div>
+    </div>
+    <div class="page page-tree hidden">
         <div class="wrapper page-tree_wrapper">
                 <aside class="left-side">
-                <div class="header__button page-tree_category">
+                <div class="ico_button page-tree_category">
                 <a href="#">
                 <span class="ico ico_audio"></span>
                 </a>
@@ -137,6 +143,8 @@
                     <div class="tree-change_select tree_1"></div>
                     <div class="tree-change_select tree_2"></div>
                     <div class="tree-change_select tree_3"></div>
+                    <div class="tree-change_select tree_4"></div>
+                    <div class="tree-change_select tree_4"></div>
                     <div class="tree-change_select tree_4"></div>
                 </div>
                 <div class="category page-tree_category">Выберите фон</div>
@@ -162,14 +170,17 @@
                     </div>
                 </div>
                 <div class="page-tree_category">
-                    <button class="form_button">Сбросить фильтры</button>
-                    <button class="form_button">Сбросить настройки</button>
+                    <button class="form_button button">Сбросить фильтры</button>
+                    <button class="form_button button">Сбросить настройки</button>
                 </div>
             </aside>
             <div class="main-section">
 
             </div>
-        </div>
+    </div>
+    </div>
+
+    
     <script></script>
 </body>
 </html>
