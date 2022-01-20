@@ -729,31 +729,6 @@ for (let i = 0; i < cardsData.length; i++) {
 } 
 }
 
-/* let cards = document.querySelectorAll('.card');
-   
-    cards.onclick = function (products) {
-
-      for (let i = 0; i < cards.length; i++) {
-    let card = cards[i];
-    let product = products[i];
-    
-    let favoriteClass = 'beloved';
-    if (!product.favorite) {
-      favoriteClass = 'unloved';
-    }
-    card.classList.add(favoriteClass);
-      }
-    } */
-/* let shapes = document.querySelector('.custom-checkbox_bell');
-let cards = document.querySelectorAll('.card');
-shapes.onchange = function () {
-  for (let item of cards) {
-    if (item.shape !== 'колокольчик') {
-      cards.classList.add('hidden');
-    }
-  }
-}
- */
 let pageStart = document.querySelector('.page-start');  
 let pageToys = document.querySelector('.page-toys_wrapper');
 let pageTree = document.querySelector('.page-tree');
@@ -786,7 +761,19 @@ let pageTreeSwitsh = document.querySelector('.page-tree_switch') as HTMLImageEle
       }
     }
     
+    const checkbox_bell = document.querySelector('.custom-checkbox_bell') as HTMLInputElement;
+    const bells = document.querySelectorAll('div.card .shape') as any;
+      if (checkbox_bell.checked) {
+        for (let bell of bells){
+          let param = bell.textContent;
+          if (param !== 'Форма: колокольчик') {
+          bell.classList.add('hidden');
+        }
+        }
+  }
+  
 
+    
 
   
 
